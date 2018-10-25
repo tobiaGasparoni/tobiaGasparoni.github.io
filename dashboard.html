@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+	<script src="clients.js"></script>
+	<script src="blogs.js"></script>
+</head>
+
+<body>
+	<h1>Tobia Gasparoni - Admin DashBoard</h1>
+	<nav class="container">
+		<a onclick="getClients()">Clients</a>
+		<a onclick="getBlogs()">Blogs</a>
+		<a onclick="getHome()">Home</a>
+	</nav>
+	<section id="clientsBlock">
+		<h1>Clients</h1>
+		<section id="clientForm">
+			<article id="form">
+		  		<select id="clientSelect" name="clients" size="5">
+		    		<option value="client1">client1</option>
+		    		<option value="client1">client1</option>
+		    		<option value="client3">client3</option>
+		    		<option value="client4">client4</option>
+		    		<option value="client5">client5</option>
+		    		<option value="client6">client6</option>
+		    	</select>
+		  		<br><br>
+		  		<button onclick="seeClient()">SEE client</button>
+		  		<button onclick="newClient()">NEW client</button>
+			</article>
+			<article id="projects">
+				<article id="pform">
+			  		<select id="projectSelect" name="clients" size="5">
+			    		<option value="project1">project1</option>
+			    		<option value="project2">project2</option>
+			    		<option value="project3">project3</option>
+			    		<option value="project4">project4</option>
+			    		<option value="project5">project5</option>
+			    		<option value="project6">project6</option>
+			    	</select>
+			  		<br><br>
+			  		<button onclick="seeProject()">SEE project</button>
+			  		<button onclick="newProject()">NEW project</button>
+				</article>
+
+			</article>
+		</section>
+	</section>
+	<section id="blogForm">
+		
+	</section>
+</body>
+
+</html>

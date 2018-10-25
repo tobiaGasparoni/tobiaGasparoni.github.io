@@ -239,6 +239,11 @@ function read(event)
 	}
 }
 
+function seeClient()
+{
+	console.log(document.getElementById("ClientSelect").value);
+}
+
 function println(message)
 {
 	document.getElementById("cmd").value += "\n" + message;

@@ -29,7 +29,7 @@ h1{
 	background-color: white;
 }
 
-textarea{
+#cmd{
 	margin-top: 50px;
 	width: 80%;
 	height: 50%;
@@ -41,7 +41,7 @@ textarea{
 	resize: none;
 }
 
-input{
+#input{
 	width: 80%;
 	height: 5%;
 	display: block;
@@ -51,7 +51,57 @@ input{
 	color: yellow;
 }
 
-::placeholder
+#input::placeholder
 {
 	color: yellow;
+}
+
+#clientForm
+{
+	display: flex;
+	width: 80%;
+	flex-wrap: nowrap;
+	justify-content: center;
+	flex-direction: row;
+	margin: 0px auto;
+}
+
+#form
+{
+	width: 30%;
+	/*background-color: orange;*/
+	text-align: center;
+}
+
+#clientForm select
+{
+	width: 90%;
+	margin-top: 30px;
+}
+
+#clientForm select option
+{
+	font-size: 20px;
+}
+
+#form button
+{
+	margin-bottom: 30px;
+}
+
+#projects
+{
+	width: 70%;
+	background-color: yellow;
+}
+
+#pform
+{
+	width: 100%;
+}
+
+#projectSelect
+{
+	margin-right: auto;
+	margin-left: auto;
 }
