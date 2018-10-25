@@ -38,6 +38,7 @@ textarea{
     margin-right: auto;
 	background-color: gray;
 	color: white;
+	resize: none;
 }
 
 input{

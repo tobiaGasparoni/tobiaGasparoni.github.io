@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script src="index.js"></script>
 	<script src="clients.js"></script>
+	<script src="blogs.js"></script>
 </head>
 
 <body>
@@ -15,8 +16,8 @@
 		<a onclick="login()">Login</a>
 		<a onclick="admin()">Admin</a>
 	</nav>
-	<textarea id="cmd" readonly>Seleccione una de las opciones en el menú de arriba.</textarea>
-	<input id="input" placeholder="Escriba lo que quiera"></input>
+	<textarea id="cmd" readonly>Select one of the options in the menu above</textarea>
+	<input id="input" placeholder="Write here..." onkeydown="read(event)"></input>
 </body>
 
 </html>
