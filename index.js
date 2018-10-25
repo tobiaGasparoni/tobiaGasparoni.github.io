@@ -6,6 +6,7 @@ var loginActive = false;
 var adminActive = false;
 
 var emailParameter = "";
+var adminParameter = 0;
 
 var state = 0;
 
@@ -22,7 +23,7 @@ function blog()
 	loginActive = false;
 	adminActive = false;
 	
-	println("\nSelect the number of the blog post you want to read");
+	println("\nType the number of the blog post you want to read");
 
 	for(var i = 0; i < blogPosts.length; i++)
 	{
@@ -62,9 +63,15 @@ function admin()
 			3: sends email with randomly generated number and requests that number
 			4: displays projects
 	*/
+	state = 0;
+
 	blogActive = false;
 	loginActive = false;
 	adminActive = true;
+
+	println("\nWrite your email");
+
+	state = 1;
 }
 
 function read(event)
@@ -133,22 +140,19 @@ function read(event)
 			    		if(emailParameter === myClients[i].email && password === myClients[i].password) 
 			    		{
 			    			println("Password verified");
-			    			println("Here are your projects with Tobia:");
+			    			println("\nHere are your projects with Tobia:");
 			    			for(var j = 0; j < myClients[i].projects.length; j++)
 			    			{
 			    				println("");
 			    				println("Name of project " + (j + 1) + ": " + myClients[i].projects[j].name);
 			    				println("Status: " + myClients[i].projects[j].status);
 			    				println("Project last modified in: " + myClients[i].projects[j].lastModified);
-			    				//window.location.href = 'your_url';
 			    				if(myClients[i].projects[j].openable === true)
-			    				{
-			    					var curLink = window.location.href.replace("/index.html", "");
-			    					println("Project url: " + curLink + myClients[i].projects[j].url);
-			    				}
+			    					println("You have access to this project. You may view its current state.");
 			    				else
-			    					println("Tobia has not allowed you to access the project");
+			    					println("You have been denied access to this project. You may not view its current state.");
 			    			}
+			    			println("\nType the number of the project you want opened");
 			    			document.getElementById("input").type = "text";
 			    			found = true;
 			    			state++;
@@ -161,7 +165,28 @@ function read(event)
 			    	empty();
 			    	break;
 			    case 3:
-			    	r
+			    	var number = parseInt(document.getElementById("input").value) - 1;
+			    	for(var i = 0; i < myClients.length && state === 3; i++)
+			    	{
+			    		if(emailParameter === myClients[i].email)
+			    		{
+				    		for(var j = 0; j < myClients[i].projects.length; j++)
+				    		{
+				    			if(j === number)
+				    			{
+				    				if(myClients[i].projects[j].openable === true)
+				    				{
+					    				var curLink = window.location.href.replace("/index.html", "");
+					    				var newLink = curLink + myClients[i].projects[j].url;
+					    				window.open(newLink, '_blank');
+					    			}
+					    			else
+					    				println("You cannot access project #" + (j+1));
+				    			}
+				    		}
+				    	}
+			    	}
+			    	empty();
 			    	break;
 			    default:
 			}
@@ -173,10 +198,36 @@ function read(event)
 			    	println("Mistake in the system. Reload plis.");
 			    	break;
 			    case 1:
+			    	if(document.getElementById("input").value === "tobia.gasparoni@gmail.com")
+			    	{
+			    		println("Email approved");
+			    		println("Type password");
+			    		state++;
+			    		empty();
+			    	}
+			    	else
+			    		println("Wrong admin email, try again");
 			    	break;
 			    case 2:
+			    	if(document.getElementById("input").value === "haha")
+			    	{
+			    		println("Password approved");
+			    		adminParameter = Math.floor(Math.random() * 10000);
+			    		var clientEmail = "tobia.gasparoni@gmail.com"
+			    		var subject = "Verification code";
+			    		var body = "The code you must types is: " + adminParameter;
+			    		sendMail(clientEmail, subject, body);
+			    		println("An email was sent with a four digit number you must write down to gain admin access.");
+			    	}
+			    	state++;
 			    	break;
 			    case 3:
+			    	if(parseInt(document.getElementById("input").value) === adminParameter)
+			    	{
+			    		println("GOOD JOB!!!!! Got to sleep now");
+			    	}
+			    	else
+			    		println("Fuck You");
 			    	break;
 			    case 4:
 			    	break;
@@ -201,10 +252,9 @@ function empty()
 
 function sendMail(clientEmail, subject, body)
 {
-    var link = "mailto:me@example.com"
-             + "?cc=" + clientEmail
+    var link = "mailto:" + clientEmail
              + "&subject=" + subject
              + "&body=" + body;
 
-    window.location.href = link;
+    window.open(link, '_blank');
 }

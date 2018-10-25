@@ -15,7 +15,7 @@ var myClients = [
           "name": "Patinaje sobre hielo",
           "status": "in progress",
           "lastModified": "2018-01-02T05:00:00.000Z",
-          "openable": true,
+          "openable": false,
           "url": "/projects/patinajeSobreHielo/index.html"
         }
       ]
