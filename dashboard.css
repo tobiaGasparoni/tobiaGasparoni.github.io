@@ -24,9 +24,7 @@ h1{
 .container a{
 	font-size: 30px;
 	cursor: pointer;
-	border: 2px black solid;
 	padding: 10px 30px;
-	background-color: white;
 }
 
 #cmd{
@@ -54,4 +52,9 @@ h1{
 #input::placeholder
 {
 	color: yellow;
+}
+
+section
+{
+	background-color: white;
 }

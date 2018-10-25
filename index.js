@@ -218,13 +218,15 @@ function read(event)
 			    		var body = "The code you must types is: " + adminParameter;
 			    		sendMail(clientEmail, subject, body);
 			    		println("An email was sent with a four digit number you must write down to gain admin access.");
+						clear();
 			    	}
 			    	state++;
 			    	break;
 			    case 3:
 			    	if(parseInt(document.getElementById("input").value) === adminParameter)
 			    	{
-			    		println("GOOD JOB!!!!! Got to sleep now");
+						var newLink = window.location.href.replace("index.html", "dashboard.html");
+			    		window.open(newLink,"_self");
 			    	}
 			    	else
 			    		println("Fuck You");
@@ -237,11 +239,6 @@ function read(event)
 		else
 			println("No option in the menu was selected... Please select an option in the menu");
 	}
-}
-
-function seeClient()
-{
-	console.log(document.getElementById("ClientSelect").value);
 }
 
 function println(message)
