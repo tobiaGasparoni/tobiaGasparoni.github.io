@@ -42,7 +42,11 @@ Brands showcase
 */
 #brandsShowcase {
     background-color: rgba(128, 150, 31, 0.582);
-    padding: 50px 125px;
+    padding: 50px 0;
+}
+
+#brandsShowcase .col-sm {
+    text-align: center;
 }
 
 #brandsShowcase img {
@@ -54,7 +58,7 @@ Description
 */
 #description {
     background-color:rgb(224, 224, 224);
-    padding: 50px 125px 50px 125px;
+    padding: 50px 10% 50px 10%;
 }
 
 #description h3 {
@@ -75,7 +79,7 @@ footer {
 }
 
 footer h4 {
-    margin-left: 125px;
+    margin-left: 10%;
     margin-bottom: 25px;
 }
 
