@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+    <head>
+        <title>Conecta elementos y sistemas</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href = "bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+        <link rel = "stylesheet" href = "index.css" />
+    </head>
+    <body>
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <section id="basic_info" class="container">
+            <article class="row">
+                <div class="col-sm">
+                    <h2><strong>Barcelona</strong></h2>
+                    <p>Tel. (+34) 902 333 075</p>
+                    <p>Fax. (+34) 93 3779151</p>
+                    <p>E-mail: info@connectaeys.es</p>
+                </div>
+                <div class="col-sm">
+                    <h2><strong>Madrid</strong></h2>
+                    <p>Tel. (+34) 902 333 075</p>
+                    <p>Fax. (+34) 91 3135099</p>
+                    <p>E-mail: madrid@connectaeys.es</p>
+                </div>
+                <div id="button-wrapper" class="col-sm">
+                    <button id="language_switch" onclick="check_language()" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        English
+                    </button>
+                </div>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo_connectaeys.png" width="150" height="100" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                            <a id="company" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EMPRESA
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a id="presentation" class="dropdown-item" href="#">PRESENTACIÓN</a>
+                            <a id="production" class="dropdown-item" href="#">PRODUCCIÓN</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a id="brands" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MARCAS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">TIMES</a>
+                            <a class="dropdown-item" href="#">IMS</a>
+                            <a class="dropdown-item" href="#">INOTEC</a>
+                            <a class="dropdown-item" href="#">EZ FORM</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a id="news" class="nav-link" href="#">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input id="inputSearch" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                </div>
+        </nav>
+        <section>
+                        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img id="c1" src="assets/es_carousel1.jpeg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img id="c2" src="assets/es_carousel2.jpeg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img id="c3" src="assets/es_carousel3.jpeg" class="d-block w-100">
+                            </div>
+                          </div>
+                        </div>
+        </section>
+        <section id="brandsShowcase" class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="assets/ezform.png">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/imr.png">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/inotec.svg">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/times.svg">
+                </div>    
+            </div>
+        </section>
+        <section id="description">
+            <h3>Vocación de servicio y compromiso de calidad</h3><br>
+            <p><strong>CONNECTA</strong> se fundó en el año 1994,con una clara vocación de <strong>SERVICIO</strong> y un compromiso de <strong>CALIDAD</strong> con nuestros clientes.</p>
+            <p>Nuestra actividad principal es la comercialización en España, Portugal y Andorra de elementos de conexión para telecomunicaciones y electrónica <strong>INDUSTRIAL</strong>, <strong>MILITAR</strong> y <strong>AEROESPACIAL</strong>, representando a fabricantes líderes en cada sector.</p>
+        </section>
+        <footer>
+            <h4 id="question">¿Necesitas un presupuesto?</h4>
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div id="form_name" class="form-group col-sm">
+                                <label id="lblName" for="inpName">Nombre</label>
+                                <input id="inpName" type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div id="form_email" aria-invalid="email" class="form-group col-sm">
+                                <label id="lblEmail" for="inpEmail">Correo Electronico</label>
+                                <input id="inpEmail" type="email" class="form-control" placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div id="form_subject" class="form-group col-sm">
+                                <label id="lblSubject" for="inpSubject">Asunto</label>
+                                <input id="inpSubject" type="text" class="form-control" placeholder="Asunto">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="form_message" class="form-group col-sm">
+                                <label id="lblMessage" for="inpMessage">Mensaje</label>
+                                <textarea class="form-control" id="inpMessage" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input id="submit" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+        </footer>
+        <script src="lang/es.js"></script>
+        <script src="lang/en.js"></script>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

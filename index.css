@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+/**
+Navegación
+*/
+
+#basic_info {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#basic_info > article > div > h2 {
+    margin: 0;
+    font-size: 17px;
+}
+
+#basic_info > article > div > p {
+    margin: 0;
+    font-size: 15px;
+}
+
+#button-wrapper button {
+    margin-top: 25px;
+}
+
+nav {
+    background-color: #eff3f7;
+}
+
+/**
+Carousel
+*/
+
+.carousel-caption {
+    background-color: rgba(30, 60,61, .60);
+}
+
+/**
+Brands showcase
+*/
+#brandsShowcase {
+    background-color: rgba(128, 150, 31, 0.582);
+    padding: 50px 125px;
+}
+
+#brandsShowcase img {
+    height: 70px;
+}
+
+/**
+Description
+*/
+#description {
+    background-color:rgb(224, 224, 224);
+    padding: 50px 125px 50px 125px;
+}
+
+#description h3 {
+    font-size: 30px;
+}
+
+#description p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/**
+Footer
+*/
+
+footer {
+    padding: 50px 0;
+}
+
+footer h4 {
+    margin-left: 125px;
+    margin-bottom: 25px;
+}
+
+/**
+Social media
+*/
+ /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+ .icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  } 
