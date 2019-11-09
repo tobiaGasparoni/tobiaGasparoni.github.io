@@ -41,16 +41,17 @@ Carousel
 Brands showcase
 */
 #brandsShowcase {
-    background-color: rgba(128, 150, 31, 0.582);
+    background-color: #f7f7f7;
     padding: 50px 0;
 }
 
 #brandsShowcase .col-sm {
     text-align: center;
+    padding: 0;
 }
 
 #brandsShowcase img {
-    height: 70px;
+    width: 100%;
 }
 
 /**
