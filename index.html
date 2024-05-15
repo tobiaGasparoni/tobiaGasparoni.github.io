@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about_me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#projects"> My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#testimonials">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="profile.jpeg" class="d-block mx-lg-auto img-fluid rounded-circle" alt="Bootstrap Themes" width="700"
+          height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Tobia Gasparoni</h1>
+        <p class="lead">Software Engineer with experience in startups and mid-sized companies.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="https://www.linkedin.com/in/tobia-gasparoni-berdugo/"><button type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2">LinkedIn</button></a>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="copyEmail()">Copy
+            tobia.gasparoni@gmail.com</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5" id="about_me">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center mb-5">
+        <div class="me-auto">
+          <h2 class="display-5 fw-bold mt-2">About me</h2>
+        </div>
+      </div>
+      <p>I'm a Colombian-Italian.</p>
+    </div>
+  </section>
+
+  <section class="py-5" id="experience">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center mb-5">
+        <div class="me-auto">
+          <h2 class="display-5 fw-bold mt-2">Experience</h2>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">DATES</th>
+            <th scope="col">COMPANY</th>
+            <th scope="col">ROLE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>SEPTEMBER 2022 - NOW</th>
+            <th>ACHIEVERS</th>
+            <th>SOFTWARE ENGINEER</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="table-container">
+                <p>Achievers is a mid-sized company that offers a recognition platform to improve employee engagement
+                  for its clients (B2B). I'm constantly learning about microservices architecture and best practices in
+                  Python (microservices), PHP (original monolith), and Javascript (React microfrontend). During my time
+                  in Achievers, I am:</p>
+                <ul>
+                  <li>
+                    Leading the encryption of vital data of our platform. This has involved thorough coordination with
+                    InfoSec and SRE teams to verify that our encryption keys and data migration protocols were adequate
+                    and compliant with all of our internal policies. I had to design and implement a CRON job in PHP
+                    that executes the migration of 15 million unencrypted MySQL records by batches. The most important
+                    part of this massive learning experience has been acquiring the skills to structure and break down a
+                    massive project into various tasks and sub-tasks that eventually reflect on atomic but meaningful
+                    Github Pull Requests.
+                  </li>
+                  <li>
+                    Having daily stand-ups to report any progress or blockers on ongoing tasks.
+                  </li>
+                  <li>
+                    Designing and implementing thorough unit, integration, and manual tests.
+                  </li>
+                  <li>
+                    Supporting the Colombian hiring efforts. I successfully referred 2 candidates that are performing
+                    excellently in their day to day duties. Also, before recently hiring a Talent Acquisition Manager, I
+                    had last meetings in the recruitment processes with candidates found by Canadian recruiters. My main
+                    responsibility was clearing up any doubts and showing enthusiasm regarding the company.
+                  </li>
+                  <li>
+                    Being the main reference in the process of looking for and opening the Bogotá office.
+                  </li>
+                  <li>
+                    Striving to integrate the Colombian team since I was the first of 20 to be hired in the country. I
+                    organize working sessions where I meet with peers in co-working spaces.
+                  </li>
+                </ul>
+                <p>Highlighted past endeavors:</p>
+                <ul>
+                  <li>
+                    Built a microfrontend in ReactJS and proprietary component library to manage Feature Flags.
+                  </li>
+                  <li>
+                    Upgraded versions of Python microservices from 3.7 to 3.11.
+                  </li>
+                  <li>
+                    Contributed to the documentation of internal company tools.
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>JANUARY 2022 - JULY 2022</th>
+            <th>TUPLAZA</th>
+            <th>SOFTWARE ARCHITECT</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="table-container">
+                <p>Tuplaza's main goal is to connect farmers to the final clients, be it businesses (B2B) or individuals
+                  (B2C), in the most direct way possible through a web platform. During this full-time internship, I:
+                </p>
+                <ul>
+                  <li>
+                    Was exposed to the startup world which involved being as practical as possible when it came to
+                    developing features.
+                  </li>
+                  <li>
+                    Participated as the tech representative in Venture Capital meetings to layout the software future
+                    of the company.
+                  </li>
+                  <li>
+                    Accompanied the expansion of the company’s operations to the Caribbean Coast. I verified that the
+                    orders were processed correctly through the platform. This meant that, sometimes, I had to go to the
+                    warehouse where the packers were preparing the bags of lettuce, for example. It was an opportunity
+                    for me to learn how to communicate technical concepts to people without that kind of literacy. We
+                    were able to track the packing progress through this software, which allowed us to have better data
+                    transparency and take iterative actions to improve the whole flow.
+                  </li>
+                  <li>
+                    Offered support and added functionalities to the current platform. My biggest personal
+                    satisfaction was adapting our integration with Alegra, an accounting and billing platform.
+                    Initially, the platform was only interacting with 1 API account. The idea was to open an account for
+                    each operating city around the country so that they could operate as independently as possible. The
+                    satisfaction came from being able to make the correct adaptations to the platform, causing not a
+                    single issue from the users' side, who in this case were the purchasing managers from each city and
+                    founders of the company.
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>APRIL 2021 - SEPTEMBER 2021</th>
+            <th>NEXT</th>
+            <th>WEB DEVELOPER</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="table-container">
+                <p>
+                  Next is an initiative devised by students to connect college students with companies and individuals
+                  willing to hire undergraduates. It was initially a Whatsapp based platform and the founders wanted to
+                  transition to a web platform that I developed with a partner using:
+                </p>
+                <ul>
+                  <li>
+                    React for the front-end
+                  </li>
+                  <li>
+                    Firebase as a complete back-end and authentication solution.
+                  </li>
+                </ul>
+                <p>
+                  The key functionalities developed were:
+                </p>
+                <ul>
+                  <li>
+                    The user could register as an employer or student looking for work.
+                  </li>
+                  <li>
+                    The employer could post a job.
+                  </li>
+                  <li>
+                    The student could filter job postings.
+                  </li>
+                  <li>
+                    The student could apply to the job.
+                  </li>
+                  <li>
+                    The employer could decide if it wanted to contact the students or discard them.
+                  </li>
+                </ul>
+                <p>
+                  This was my first project that involved the creation of a solution from start to finish with frequent
+                  meetings with the founders to give an update on the progress and potential blockers to discuss.
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>MARCH 2020 - SEPTEMBER 2020</th>
+            <th>APITUDE</th>
+            <th>BACKEND ENGINEER</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="table-container">
+                <p>I developed 3 Python services that used web scraping to gather public information and return the
+                  results in a standardized format, following the Rest API guidelines. Here I learned:
+                </p>
+                <ul>
+                  <li>
+                    Essentials of unit testing for the "real world", by verifying the behavior of the system along the
+                    happy and various error paths.
+                  </li>
+                  <li>
+                    How to write production-level Python code that was reviewed continually by a 2nd person.
+                  </li>
+                  <li>
+                    How to craft web scraping tasks that usually involved taking a REST API input and injecting it into
+                    HTML elements to query information in the targeted websites.
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>AUGUST 2019 - DECEMBER 2019</th>
+            <th>UNIVERSIDAD DE LOS ANDES</th>
+            <th>TEACHING ASSISTANT</th>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="table-container">
+                <p>I was a teaching assistant of the Data Structures and Algorithms class, taught with the Java
+                  language. The role involved:
+                </p>
+                <ul>
+                  <li>
+                    Attending the labs with the students every week to clarify any doubts about the workshops. In these
+                    labs, students would implement structures like arraylists, linked lists, stacks, queues, trees,
+                    heaps and graphs. They all had to be unit tested accordingly to then be applied in 3 practical
+                    projects.
+                  </li>
+                  <li>
+                    Allocating a space outside of class to resolve concerns during the development of projects.
+                  </li>
+                  <li>
+                    Grading half of all project deliverables. All exams were graded by the course teacher.
+                  </li>
+                  <li>
+                    Mentoring students' groups (of 2 members) towards how to collaborate both on a human and technical
+                    level. On the human side, I recall having to convince a student that it was better to learn now how
+                    to work with peers and not crash with the harsh realities and frustrations that he would eventually
+                    encounter in further courses and his professional life. On a technical level, this course was also
+                    the excuse to expose students to how Git worked through Gitlab, so I had to accompany those first
+                    steps.
+                  </li>
+                </ul>
+                <p>My proudest accomplishment was creating a semester ending bonus exercise where the students had to
+                  parse a .txt file that illustrated a maze. The parsing had to lead to the generation of a graph that
+                  had to be traversed using Dijkstra's algorithm to find the shortest path from start to finish.
+                  Finally, they had to test the program against several test inputs because it involved a session of
+                  defending the solution and testing it against cases provided by me.</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="py-5" id="projects">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center mb-5">
+        <div class="me-auto">
+          <h2 class="display-5 fw-bold mt-2">My projects</h2>
+          <span class="text-muted">Click on any box to check out each project's Github repository</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-4 p-2">
+          <a href="https://github.com/tobiaGasparoni/MaaS-Thesis">
+            <img class="img-fluid rounded" src="maas.jpeg" alt="">
+          </a>
+          <h3 class="text-center">MaaS</h3>
+          <figcaption class="figure-caption text-center">Thesis project that aimed at making it easier to create and
+            customize optimization models. Built with Django Rest Framework and MongoDB.</figcaption>
+        </div>
+        <div class="col-12 col-lg-4 p-2">
+          <a href="https://github.com/tobiaGasparoni/SchedulerJava">
+            <img class="img-fluid rounded" src="scheduler.jpeg" alt="">
+          </a>
+          <h3 class="text-center">Scheduler</h3>
+          <figcaption class="figure-caption text-center">Java program that generates all possible schedule combinations
+            given the classes that the student wants to sign up to.</figcaption>
+        </div>
+        <div class="col-12 col-lg-4 p-2">
+          <a href="https://github.com/tobiaGasparoni/Movies-App">
+            <img class="img-fluid rounded"
+              src="https://shuffle.dev/bootstrap5-plain-assets/images/blue-400-horizontal.png" alt="">
+          </a>
+          <h3 class="text-center">Movies App</h3>
+          <figcaption class="figure-caption text-center">Kotlin mobile app to decide what movie to watch taking into
+            account your and your friends interests.
+          </figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="publications">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center mb-5">
+        <div class="me-auto">
+          <h2 class="display-5 fw-bold mt-2">Publications</h2>
+        </div>
+      </div>
+      <h3>Model as a Service: an architecture to deploy highly modular IT services</h3>
+      <h4>Universidad de los Andes - July 2022</h4>
+      <p>With the constant development of startups dedicated to use cutting edge algorithms and large data manipulation
+        methods to solve complex business problems, the provided services become more disconnected from the final
+        client. A need arises to make it easier for the customer to execute and customize the tools made available for
+        it. On the other hand, the developers should also organize their code in a way that enables the needed
+        customization. The modeler must be capable of easily building complex services based on pre-built unitary
+        modules, each with a self-contained purpose. The solution designed in this context is a MaaS (Model as a
+        Service) and, by definition, also a SaaS (Software as a Service). In it, the developers create the unitary
+        modules that would be consumed by the bigger IT services offered to the client. The modelers, then, have to
+        create a console so that the customer seamlessly generates its own endpoints to consume. By developing a
+        prototype of the platform, it was proven that it is possible to have an architecture that guides the creation
+        and execution of programming models with the given requirements. The architecture was able to execute a service
+        by using 2 unitary services. Therefore, the platform supports 2 different levels of customization: singular, by
+        passing parameters to one module, and plural, by joining more than one module.</p>
+      <a href="https://repositorio.uniandes.edu.co/entities/publication/e3b05f87-c118-4150-a90b-2c80b98a72e1"><button
+          type="button" class="btn btn-primary btn-lg px-4">View</button>
+      </a>
+    </div>
+  </section>
+
+  <section class=" py-5" id="testimonials">
+    <div class="home-testimonial-bottom">
+      <div class="container testimonial-inner">
+        <div class="d-flex flex-wrap align-items-center mb-5">
+          <div class="me-auto">
+            <h2 class="display-5 fw-bold mt-2">Testimonials</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 style-3">
+            <div class="tour-item ">
+              <div class="tour-desc bg-white">
+                <div class="tour-text color-grey-3 text-center">&ldquo;Tobia is not only a talented engineer, but
+                  a
+                  professional deeply versed in various industries. During a work hackathon, Tobia dedicated an
+                  entire
+                  24 hours to coding the solution we had conceptualized, showcasing his problem-solving skills by
+                  exploring different avenues when encountering obstacles, which led to our win at the end.&rdquo;
+                </div>
+                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                    src="https://media.licdn.com/dms/image/D5603AQECcscv-geZAw/profile-displayphoto-shrink_800_800/0/1712781385384?e=1721260800&v=beta&t=RDN5v38Lh8ZdLoceDFvvUYzjzzCoAB7s6jFOAYwo6kA"
+                    alt=""></div>
+                <div class="link-name d-flex justify-content-center">Salimeh Miller</div>
+                <div class="link-position d-flex justify-content-center">UI/UX co-worker @ Achievers</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 style-3">
+            <div class="tour-item ">
+              <div class="tour-desc bg-white">
+                <div class="tour-text color-grey-3 text-center">&ldquo;As a recent graduate Tobia had surpassed
+                  all
+                  expectations that I and the other senior members of the team had. Tobia was motivated,
+                  intelligent and
+                  detail oriented. [...] Would love to work with him again in the future and would highly
+                  recommend him
+                  to any team looking for a passionate developer.&rdquo;</div>
+                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                    src="https://media.licdn.com/dms/image/D5603AQErq3dqjAdo7Q/profile-displayphoto-shrink_800_800/0/1671667832063?e=1721260800&v=beta&t=o3M0rPZzxUMfUhvLTBSkH1SA5qMIkfmp6B-Og7iTbgI"
+                    alt=""></div>
+                <div class="link-name d-flex justify-content-center">Daniel Miller</div>
+                <div class="link-position d-flex justify-content-center">Senior Software Engineer teammate @
+                  Achievers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 style-3">
+            <div class="tour-item ">
+              <div class="tour-desc bg-white">
+                <div class="tour-text color-grey-3 text-center">&ldquo;Tobia es un gran ingeniero de sistemas,
+                  quien me
+                  ayudó con el desarrollo integral en términos de UX/UI de una página web para un proyecto de
+                  trabajo
+                  flexible para estudiantes, mostró grandes aptitudes técnicas y blandas además de un compromiso
+                  inquebrantable.&rdquo;</div>
+                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                    src="https://media.licdn.com/dms/image/D4E03AQET5x9tix69cQ/profile-displayphoto-shrink_800_800/0/1701871549172?e=1721260800&v=beta&t=fM7BEvAanFSzl-THVM0OANhRRfDdegIay10CtPcyw84"
+                    alt=""></div>
+                <div class="link-name d-flex justify-content-center">Daniel Ospina</div>
+                <div class="link-position d-flex justify-content-center">Product Owner of client work @ Next</div>
+              </div>
+            </div>
+          </div>
+          <p>These are just excerpts. To read the complete testimonials, <a
+              href="https://www.linkedin.com/in/tobia-gasparoni-berdugo/details/recommendations/">click here!</a></p>
+        </div>
+      </div>
+
+
+      <br></br>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
